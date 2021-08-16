@@ -16,7 +16,7 @@ while True:
         os.system("sudo apt update")
         print("Updated, now upgrading...")
         logging.info("Updated, now upgrading...")
-        os.system("sudo apt upgrade")
+        os.system("sudo apt upgrade -y")
         print("Upgraded.")
         logging.info("Upgraded.")
 
@@ -24,4 +24,3 @@ while True:
         elapsed_time = 0
         start_time = time.time()
         seconds = 43200
-
