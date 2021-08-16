@@ -1,0 +1,11 @@
+[Unit]
+Description=Ubuntu-Updater
+
+[Service]
+Restart=always
+WorkingDirectory=/server/server/Ubuntu-Updater/
+ExecStart=/usr/bin/python3 /server/server/Ubuntu-Updater/main.py
+User=server
+
+[Install]
+WantedBy=multi-user.target
